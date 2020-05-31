@@ -16,7 +16,7 @@ $password = "password";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password) or die(mysqli_connect_error());
-$db = mysqli_select_db($conn, 'dell'); // Select DB from database
+mysqli_select_db($conn, 'dell'); // Select DB from database
 //Selecting Database
 $query = mysqli_query($conn, "select * from details where username='$user' and password='$pass'");
 $numrows = mysqli_num_rows($query);
