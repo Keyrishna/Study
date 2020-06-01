@@ -20,7 +20,7 @@ mysqli_select_db($conn, 'dell'); // Select DB from database
 //Selecting Database
 $query = mysqli_query($conn, "select * from details where username='$user' and password='$pass'");
 $numrows = mysqli_num_rows($query);
-if($numrows>=1)
+if($numrows=1)
 {
 //         header("Location:home.html");
     echo "Username available";
